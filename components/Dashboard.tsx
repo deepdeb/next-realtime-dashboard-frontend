@@ -4,7 +4,6 @@ import { socket } from "@/socket";
 import { AreaChartCanvas } from "./AreaChartCanvas";
 import { BarChartCanvas } from "./BarChartCanvas";
 import { DonutChartGrid } from "./DonotChartGrid";
-import { DomainRadarChart } from "./DomainRadarChart";
 import { DashBoardCards } from "./DashBoardCards";
 
 export const Dashboard = () => {
