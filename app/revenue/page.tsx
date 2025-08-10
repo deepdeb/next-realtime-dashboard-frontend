@@ -1,3 +1,5 @@
+"use client"
+
 import { useSocketData } from "@/context/SocketDataContext"
 
 export default function Revenue() {
