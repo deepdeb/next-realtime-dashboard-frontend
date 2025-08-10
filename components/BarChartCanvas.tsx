@@ -33,8 +33,8 @@ export const BarChartCanvas = ({ data }: { data: ServerData[] }) => {
                 />
                 <Legend/>
                 <Bar dataKey="totalRevenue" stackId="a" fill="#0EA5E9" /> {/* sky-500 */}
-                <Bar dataKey="profit" stackId="b" fill="#10B981" /> {/* emerald-600 */}
-                <Bar dataKey="loss" stackId="c" fill="#F43F5E" /> {/* rose-600 */}
+                <Bar dataKey="profit" stackId="b" fill="#10B981" /> {/* emerald-500 */}
+                <Bar dataKey="loss" stackId="c" fill="#F43F5E" /> {/* rose-500 */}
             </BarChart>
         </ResponsiveContainer>
     );
