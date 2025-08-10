@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineDashboard, AiOutlineLike } from "react-icons/ai";
 import { CiMoneyBill, CiWallet } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
@@ -15,15 +16,15 @@ export const SideBar = () => {
           />
         </div>
 
-        <div className="flex items-center space-x-2 cursor-pointer text-zinc-700">
+        <Link href="/dashboard" className="flex items-center space-x-2 cursor-pointer text-zinc-700">
           <AiOutlineDashboard size={30} className="text-zinc-500" />
           <p className="text-lg">Dashboard</p>
-        </div>
+        </Link>
 
-        <div className="flex items-center space-x-2 cursor-pointer text-zinc-700">
+        <Link href="/revenue" className="flex items-center space-x-2 cursor-pointer text-zinc-700">
           <CiMoneyBill size={30} className="text-zinc-500" />
           <p className="text-lg">Revenue</p>
-        </div>
+        </Link>
 
         <div className="flex items-center space-x-2 cursor-pointer text-zinc-700">
           <IoIosNotificationsOutline size={30} className="text-zinc-500" />

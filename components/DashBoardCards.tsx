@@ -5,10 +5,7 @@ type DashBoardCardsProps = {
   percentageChange: Change | null;
 };
 
-export const DashBoardCards = ({
-  data,
-  percentageChange,
-}: DashBoardCardsProps) => {
+export const DashBoardCards = ({ data, percentageChange }: DashBoardCardsProps) => {
   const totalRevenue = data?.reduce((acc, curr) => acc + curr.totalRevenue, 0);
   const totalProfits = data?.reduce((acc, curr) => acc + curr.profit, 0);
   const totalLoss = data?.reduce((acc, curr) => acc + curr.loss, 0);

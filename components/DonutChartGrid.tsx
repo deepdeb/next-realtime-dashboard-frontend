@@ -26,8 +26,7 @@ const DonutChartCard = ({ companyData, index }: { companyData: ServerData; index
 
   return (
     <div style={{ width: 160, textAlign: "center" }}>
-      <ResponsiveContainer width={100} height={100}>
-        <PieChart>
+        <PieChart width={100} height={100}>
           <Pie
             data={chartData}
             innerRadius={20}
@@ -52,7 +51,6 @@ const DonutChartCard = ({ companyData, index }: { companyData: ServerData; index
             <Cell fill="#E5E7EB" /> {/* light gray background */}
           </Pie>
         </PieChart>
-      </ResponsiveContainer>
       <div style={{ fontWeight: 600, fontSize: 14, marginTop: 8, color: "#6B7280" }}>{companyData.name}</div>
       <div style={{ fontSize: 12, color: "#6B7280" }}>
         Revenue: {companyData.totalRevenue.toLocaleString()}
